@@ -21,7 +21,27 @@ The following is the initial stack that should be used, although you can make so
 # Requirements
 This application must be a very simple responsive app.. but that said it will have two different designs for the desktop version and the mobile version (in order to test how this framework handles that.. ie is through css or some router or..?)
 
-![first image](https://github.com/lobolabs/react-sample-app/images/mockups/enter-name-mobile.png)
+
+
+# Home page Mobile
+![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/home-mobile.png)
+
+# Home page Desktop
+![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/home-desktop.png)
+
+# Enter Name Mobile
+![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/enter-name-mobile.png)
+
+# Enter Name Desktop
+![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/enter-name-desktop.png)
+
+# View Names Mobile
+![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/view-names-mobile.png)
+
+# View Names Desktop
+![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/view-names-desktop.png)
+
+
 
 
 
