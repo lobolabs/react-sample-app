@@ -1,47 +1,55 @@
-# Purpose
-This is a sample project that illustrates the use of the react framework in a very simple setting
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-# Technical setup
-The following is the initial stack that should be used, although you can make some changes to the backend choices (ie use python rather than go, but please explain why in the commit message or in this repo's wiki)
+# React Tutorial
 
-## Clients  
-   **Core:** React / React Native  
-   **Client Data Model:** Relay (https://facebook.github.io/relay/)  
-   **Routing:** React Router Relay (https://github.com/relay-tools/react-router-relay)  
-   **Generic CSS:** Material UI (http://www.material-ui.com/) (non-native)- For Admins non-user facing pages  
-   **Custom CSS:** Radium (http://stack.formidable.com/radium/) (non-native) - For Branded products or products that need a custom look
-## Database API
-   **Spec:** GraphQL (http://graphql.org/)  
-   **Implementation:** Go GraphQL (https://github.com/graphql-go/graphql) Go Relay (https://github.com/graphql-go/relay)  
-## Backend:
-   **API Server / Static Assets:** App Engine  
-   **Datastorage:** Google Cloud Datastore (https://cloud.google.com/appengine/docs/go/datastore/)  
-   **Custom:** Things like video processing Managed VMS (https://cloud.google.com/appengine/docs/managed-vms/) - You can use docker here to describe your builds
+This is the React comment box example from [the React tutorial](http://facebook.github.io/react/docs/tutorial.html).
 
-# Requirements
-This application must be a very simple responsive app.. but that said it will have two different designs for the desktop version and the mobile version (in order to test how this framework handles that.. ie is through css or some router or..?)
+## To use
 
+There are several simple server implementations included. They all serve static files from `public/` and handle requests to `/api/comments` to fetch or add data. Start a server with one of the following:
 
+### Node
 
-# Home page Mobile
-![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/home-mobile.png)
+```sh
+npm install
+node server.js
+```
 
-# Home page Desktop
-![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/home-desktop.png)
+### Python
 
-# Enter Name Mobile
-![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/enter-name-mobile.png)
+```sh
+pip install -r requirements.txt
+python server.py
+```
 
-# Enter Name Desktop
-![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/enter-name-desktop.png)
+### Ruby
+```sh
+ruby server.rb
+```
 
-# View Names Mobile
-![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/view-names-mobile.png)
+### PHP
+```sh
+php server.php
+```
 
-# View Names Desktop
-![first image](https://github.com/lobolabs/react-sample-app/wiki/images/mockups/view-names-desktop.png)
+### Go
+```sh
+go run server.go
+```
 
+### Perl
 
+```sh
+cpan Mojolicious
+perl server.pl
+```
 
+And visit <http://localhost:3000/>. Try opening multiple tabs!
 
+## Changing the port
 
+You can change the port number by setting the `$PORT` environment variable before invoking any of the scripts above, e.g.,
+
+```sh
+PORT=3001 node server.js
+```
